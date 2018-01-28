@@ -1,0 +1,26 @@
+<div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="col-md-3 bordato" *ngFor="let rapportino of rapportini">
+              <h3>
+                Nome Progetto {{ rapportino.NomeProgetto | uppercase }}
+              </h3>
+      
+              <p>
+                Chi {{ rapportino.Chi }}
+              </p>
+      
+              <p>
+                Note {{ rapportino.Note }}
+              </p>
+      
+              <p>
+                Ore {{ rapportino.Ore }}
+              </p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
