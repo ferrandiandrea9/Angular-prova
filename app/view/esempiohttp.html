@@ -1,0 +1,15 @@
+<div class="row">
+        <div class="col-md-12">
+                TITOLO: <input type="text" class="form-group" #titolo>
+                CORPO: <textarea #corpo> </textarea>
+            </div>
+            <button type="button" class="btn btn-success" (click)="pubblicaPost(titolo.value, corpo.value)"> Pubblica </button>
+</div>
+<div class="clearfix"></div>
+<div class="row" *ngFor="let articolo of articoli">
+    <div class="col-md-12">
+        <h2> {{ articolo.title }}</h2>
+        <h2> {{ articolo.body }}</h2>
+    </div>
+
+</div>

@@ -11,6 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var router_deprecated_1 = require('@angular/router-deprecated');
 var rapportino_component_1 = require('./rapportino.component');
+var esempiohttp_component_1 = require('./esempiohttp.component');
 var AppComponent = (function () {
     function AppComponent() {
     }
@@ -26,6 +27,11 @@ var AppComponent = (function () {
                 path: '/Andrea',
                 name: 'Andrea',
                 component: rapportino_component_1.RapportinoComponent
+            },
+            {
+                path: '/EsempioHttp',
+                name: 'EsempioHttp',
+                component: esempiohttp_component_1.EsempioHttpComponent
             }
         ]), 
         __metadata('design:paramtypes', [])
